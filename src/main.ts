@@ -25,7 +25,12 @@ async function bootstrap() {
       transformOptions: { enableImplicitConversion: true },
     }),
   );
-  app.enableCors();
+  app.enableCors({
+    origin:
+      'https://frontend-wojtek-jezierski-main-847f0comy-wojciech-jezierski.vercel.app',
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+    allowedHeaders: 'Content-Type,Authorization',
+  });
   await app.listen(process.env.PORT);
 }
 bootstrap();
