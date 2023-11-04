@@ -27,7 +27,7 @@ async function bootstrap() {
   );
   app.enableCors({
     origin:
-      'https://frontend-wojtek-jezierski-main-847f0comy-wojciech-jezierski.vercel.app',
+      'https://frontend-wojtek-jezierski-main-mx7llftqp-wojciech-jezierski.vercel.app',
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     allowedHeaders: 'Content-Type,Authorization',
   });
